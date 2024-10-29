@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anime.html">
+    <title>Arsalan Senki - Videos</title>
+    <style>
+        body {
+            font-family: 'Vazir', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #27e841;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #004494;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            background-color: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-list {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-end; /* Align items to the right */
+        }
+
+        .video-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 600px;
+            height: 350px;
+            margin-bottom: 30px;
+        }
+
+        .video-item video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .video-item h3 {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 5px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            margin: 0;
+        }
+
+        .playing-title {
+            text-align: center;
+            font-size: 24px;
+            margin: 15px 0;
+            color: #110101;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arsalan Senki - فصل دوم </h1>
+        <button onclick="location.href='anime.html'">بازگشت به فصل اول</button>
+    </header>
+    <main>
+        <div class="playing-title" id="playingTitle">Part 1 در حال پخش است</div>
+        <div class="video-container">
+            <video id="mainVideo" controls>
+                <source src="s1.mp4" type="video/mp4">
+                مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+            </video>
+        </div>
+        <div class="video-list">
+            <div class="video-item">
+                <h3>Part 1</h3>
+                <video data-src="s1.mp4" data-title="Part 1">
+                    <source src="s1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 2</h3>
+                <video data-src="s2.mp4" data-title="Part 2">
+                    <source src="s2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 3</h3>
+                <video data-src="s3.mp4" data-title="Part 3">
+                    <source src="s3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 4</h3>
+                <video data-src="s4.mp4" data-title="Part 4">
+                    <source src="s4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 5</h3>
+                <video data-src="s5.mp4" data-title="Part 5">
+                    <source src="s5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 6</h3>
+                <video data-src="s6.mp4" data-title="Part 6">
+                    <source src="s6.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 7</h3>
+                <video data-src="s7.mp4" data-title="Part 7">
+                    <source src="s7.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Part 8</h3>
+                <video data-src="s8.mp4" data-title="Part 8">
+                    <source src="s8.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Arsalan Senki. All rights reserved.</p>
+    </footer>
+    <script>
+        const videoItems = document.querySelectorAll('.video-item video');
+        const mainVideo = document.getElementById('mainVideo');
+        const playingTitle = document.getElementById('playingTitle');
+
+        videoItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mainVideo.src = item.dataset.src;
+                playingTitle.textContent = item.dataset.title + ' در حال پخش است';
+                mainVideo.play();
+
+                // Scroll to the main video
+                const videoContainer = document.querySelector('.video-container');
+                videoContainer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
