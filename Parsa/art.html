@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هنر ایرانی</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Vazir', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #4A90E2;
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: block;
+            float: left;
+        }
+
+        /* Button Styling */
+        button {
+            background: linear-gradient(145deg, #6e7dff, #4f5bf0);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 18px 36px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-align: center;
+            display: block;
+            margin: 20px 0;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+            transform: translateY(-2px);
+        }
+
+        button.activeButton {
+            background-color: red !important;
+            animation: pulse 1s infinite;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Paragraph Styling */
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Full-Width Content Section */
+        article {
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Container for Images and Content */
+        .content {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            display: flex;
+            justify-content: center;  /* Horizontally center */
+            align-items: center;      /* Vertically center */
+            padding: 20px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 60px; /* Set the height of the footer */
+        }
+
+        /* Fix float issue for images */
+        .content img {
+            clear: both;
+        }
+
+        /* Container for the buttons (Side-by-Side) */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin-top: 20px;
+        }
+
+        /* Style for individual buttons in container */
+        .button-container button {
+            display: inline-block;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>هنر ایرانی</h1>
+    <article>
+        <div class="content">
+            <img src="images.jpeg" alt="تصویر هنر ایرانی">
+            <p>هنر ایرانی شامل رشته‌های مختلفی از جمله نقاشی، خطاطی، معماری و هنرهای دستی است. این هنرها نمایانگر تاریخ و فرهنگ غنی ایران هستند و در آثار باستانی و معاصر به وضوح مشهود است. در این هنرها، ارزش‌های فرهنگی، اجتماعی و مذهبی ایرانیان به زیبایی بازتاب می‌یابند.</p>
+            <a href="https://fa.wikipedia.org/wiki/%D9%87%D9%86%D8%B1_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C">با هنر ایرانی بیشتر آشنا شوید</a> <br> 
+            
+            <p>از جمله ویژگی‌های هنر ایرانی، توجه به جزئیات و زیبایی‌شناسی خاص آن است که در معماری مسجدها، کاخ‌ها و آثار هنری به خوبی مشاهده می‌شود. هنرمندان ایرانی با بهره‌گیری از رنگ‌های غنی و فرم‌های پیچیده، آثار بی‌نظیری خلق کرده‌اند. در هنر ایرانی، زیبایی و نظم به گونه‌ای در هم تنیده‌اند که هر قطعه از آن داستانی را روایت می‌کند.</p>
+            <a href="https://fa.wikipedia.org/wiki/%D8%AE%D9%88%D8%B4%D9%86%D9%88%DB%8C%D8%B3%DB%8C">خوشنویسی</a>
+            
+            <p>نقاشی ایرانی، با تنوع موضوعات و سبک‌ها، از دوره‌های مختلف تاریخی، از جمله دوره صفوی و قاجاری، نشأت گرفته است. این نقاشی‌ها اغلب شامل مضامین عاشقانه، حماسی و مذهبی هستند و به خوبی روح و زندگی ایرانی را به تصویر می‌کشند. نقاشی‌های ایرانی از لحاظ رنگ‌های گرم و دلنشین و ترکیب‌بندی‌های هنری، توانسته‌اند ویژگی‌های فرهنگی ایرانی را در جهان معرفی کنند.</p>
+            <a href="https://fa.wikipedia.org/wiki/%D9%86%DA%AF%D8%A7%D8%B1%DA%AF%D8%B1%DB%8C_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C">با نقاشی ایرانی بیشتر آشنا شوید</a>
+            
+            <p>خطاطی یکی دیگر از هنرهای برجسته ایرانی است که با توجه به زیبایی و ظرافت خط‌ها، نمایانگر فرهنگ و زبان فارسی است. هنرمندان خطاط با استفاده از انواع خط‌ها، آثار هنری ارزشمندی خلق کرده‌اند که در مساجد و کتاب‌های قدیمی دیده می‌شود. خط نستعلیق، که در دوران صفوی تکامل یافت، یکی از مشهورترین خطوط ایرانی است که در آثار هنری مختلف، به ویژه در اشعار فارسی، استفاده می‌شود.</p>
+            <a href="https://in.pinterest.com/masoomqadri61140/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-%D9%86%D8%B3%D8%AA%D8%B9%D9%84%DB%8C%D9%82-%D8%AE%D8%B7%D8%A7%D8%B7%DB%8C/">با خطوط ایرانی بیشتر آشنا شوید</a>
+            
+            <p>معماری ایرانی نیز به عنوان یکی از مهم‌ترین جنبه‌های هنر ایرانی شناخته می‌شود. بناهای تاریخی نظیر تخت جمشید، میدان نقش جهان و مسجد شیخ لطف‌الله، نمایانگر شکوه و زیبایی معماری ایرانی هستند که با تلفیق اصول هندسی و هنری ساخته شده‌اند. معماری ایرانی نه تنها در داخل ایران، بلکه در کشورهای همسایه نیز تأثیرات زیادی گذاشته است. از جمله ویژگی‌های برجسته معماری ایرانی می‌توان به استفاده از گنبدها، ایوان‌ها و تزیینات هندسی اشاره کرد.</p>
+            <a href="https://onlinesazeh.com/blog/paper?I=1074#:~:text=%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C%20(Persian%20architecture)%20%D8%B3%D8%A8%DA%A9%DB%8C,%D9%85%D8%B4%D8%AE%D8%B5%D9%87%20%D9%87%D8%A7%DB%8C%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C%20%D9%BE%D8%B1%D8%B4%DB%8C%D9%86%20%D8%A7%D8%B3%D8%AA.">با معماری ایرانی بیشتر آشنا شوید</a>
+            
+            <p>هنرهای دستی ایران، از جمله سفالگری، فرش بافی و بافت قالی، نیز دارای شهرت جهانی هستند. فرش‌های ایرانی با طرح‌ها و رنگ‌های متنوع، نماد هنر و مهارت بالای بافندگان ایرانی هستند و به عنوان آثار هنری با ارزش شناخته می‌شوند. قالی‌های ایرانی در دنیا به عنوان گران‌بهاترین و زیباترین فرش‌ها شناخته می‌شوند. در حقیقت، هنر فرش بافی در ایران به قدری مهم است که در بعضی از مناطق، آن را به عنوان یک نماد فرهنگی ملی می‌شناسند.</p>
+            <a href="https://www.eligasht.com/Blog/tourism/%D8%B5%D9%86%D8%A7%DB%8C%D8%B9-%D8%AF%D8%B3%D8%AA%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86/">با صنایع دستی ایران بیشتر آشنا شوید</a>
+            
+            <p>به طور کلی، هنر ایرانی نه تنها به عنوان یک میراث فرهنگی بلکه به عنوان یک منبع الهام برای هنرمندان معاصر نیز در نظر گرفته می‌شود. این هنر به ما یادآوری می‌کند که چگونه خلاقیت و زیبایی می‌تواند زندگی ما را غنی‌تر کند. هنرمندان ایرانی با استفاده از سنت‌ها و روش‌های قدیمی، همچنان آثار جدیدی خلق می‌کنند که مورد توجه و تحسین جهانی قرار می‌گیرد.</p>
+
+            <p>هنر ایرانی از زمان‌های قدیم تا به امروز همواره مورد توجه محافل هنری و فرهنگی جهانی بوده است. در هر دوره‌ای، این هنر با توجه به شرایط اجتماعی، سیاسی و فرهنگی آن زمان تحولاتی داشته است. از هنر دوره هخامنشیان تا هنر دوران اسلامی و هنر معاصر، همواره شاهد شکوفایی هنر و خلاقیت در ایران بوده‌ایم.</p>
+
+            <!-- Container for Buttons (Side-by-Side) -->
+            <div class="button-container">
+                <button id="learnMoreButton" onclick="window.location.href='https://en.wikipedia.org/wiki/Persian_art'">یادگیری بیشتر</button>
+                <button id="mainPageButton" onclick="window.location.href='ancient_iran.html'">بازگشت به صفحه اصلی</button>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <p>&copy; 2024 هنر ایرانی</p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const learnMoreButton = document.getElementById('learnMoreButton');
+            const mainPageButton = document.getElementById('mainPageButton');
+            const scrollPosition = window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+            if (scrollPosition >= documentHeight - 100) {
+                learnMoreButton.classList.add('activeButton');
+                mainPageButton.classList.add('activeButton');
+            } else {
+                learnMoreButton.classList.remove('activeButton');
+                mainPageButton.classList.remove('activeButton');
+            }
+        };
+    </script>
+</body>
+</html>
